@@ -44,5 +44,7 @@ ax.plot(x, y_predicted_from_corr, linestyle='--', marker=matplot.markers.CARETUP
 ax.set(xlabel='x', ylabel='y',
        title='Simple linear regression with two methods:\n mean and correlation')
 ax.legend()
-ax.text(4.2,5,r'$RMSE_{mean}=RMSE_{correlation}=$'+str(error_from_mean)[:4], fontsize=10)
+ax.text(4.2, 5.4, r'$a=$' + str(a_from_mean)[:4] +
+        ' and $b=$' + str(b_from_mean)[:4], fontsize=10)
+ax.text(4.2, 5, r'$RMSE=$' + str(error_from_mean)[:4], fontsize=10)
 plt.show()
