@@ -3,7 +3,7 @@ _Sophie Marchand - May 2020_
 
 ## Shortcut
 The logistic regression is used to solve binary classification problem by modelling the probability $p$ of belonging to the class $0$ (or $1$) through logarithm transformation and linear combination of input variables such as $(x_{1}, x_{2})$ as follow:
-$$ln(\frac{p}{1-p}) = a + b_{1} * x_{1} + b_{2} * x_{2} = -f \xLeftrightarrow[]{} p =\frac{e^{-f}}{1 + e^{-f}}$$
+$$ln(\frac{p}{1-p}) = a + b_{1} * x_{1} + b_{2} * x_{2} = -f \iff p =\frac{e^{-f}}{1 + e^{-f}}$$
 
 Also, we can estimate the coefficients $(a, b_{1}, b_{2})$ of the logistic regression through the gradient descent with, for example, the cost function $C$ leading to the coefficient update for $c \in(a, b_{1}, b_{2})$ with $\eta$ the learning rate and $i$ the index of the set of the input and output values $(x_{1}, x_{2}, y)_{i}$:
 $$C(i) = \frac{1}{2}(p-y_{i})^{2} \text{  leading to  } c:=c + \eta*\frac{\partial y}{\partial c}*(p-y_{i})*p*(1-p)$$
@@ -41,7 +41,7 @@ The code source displayed below can be found on [GitHub](https://github.com/Soph
 Tutorial Logistic Regression with Stochastic Gradient Descent
 
 Author: Sophie Marchand
-"""
+""" 
 import matplotlib.pyplot as plt
 import numpy as np
 import sklearn.datasets as skd
