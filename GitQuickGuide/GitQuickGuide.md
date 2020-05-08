@@ -52,9 +52,14 @@ cd my_repository
 git add .
 ```
 \pagebreak
-Then commit them
+Or, if you want to only add the modifications of one specific file
 ```python
-git commit -am "description_modification"
+git add file_name.extension
+```
+
+Then commit the added modification with a description
+```python
+git commit -m "description_modification"
 ```
 
 Finally push them! For the first time you will need to do
