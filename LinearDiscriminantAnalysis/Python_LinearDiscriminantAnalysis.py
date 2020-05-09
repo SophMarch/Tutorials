@@ -1,6 +1,6 @@
 """
 Tutorial Linear Discriminant Analysis
-
+Explanations at: https://sophiemarchand.netlify.app/
 Author: Sophie Marchand
 """
 import matplotlib.pyplot as plt
